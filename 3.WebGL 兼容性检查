@@ -1,0 +1,36 @@
+# # WebGL 兼容性检查
+
+
+尽管大部分情况无须担心，但有些设备或者浏览器仍然不支持 WebGL。以下方法能让你检查是否受支持并能提供给用户信息反馈。
+
+在你的 js 中添加 [https://github.com/mrdoob/three.js/blob/master/examples/js/Detector.js ](https://github.com/mrdoob/three.js/blob/master/examples/js/Detector.js)，在准备开始渲染前运行如下代码
+```
+if (Detector.webgl) {
+    // Initiate function or other initializations here
+    animate();
+} else {
+    var warning = Detector.getWebGLErrorMessage();
+    document.getElementById('container').appendChild(warning);
+}
+```
+
+
+
+
+
+
+尽管大部分情况无须担心，但有些设备或者浏览器仍然不支持 WebGL。以下方法能让你检查是否受支持并能提供给用户信息反馈。
+
+在你的 js 中添加 [https://github.com/mrdoob/three.js/blob/master/examples/js/Detector.js ](https://github.com/mrdoob/three.js/blob/master/examples/js/Detector.js)，在准备开始渲染前运行如下代码
+```
+if (Detector.webgl) {
+    // Initiate function or other initializations here
+    animate();
+} else {
+    var warning = Detector.getWebGLErrorMessage();
+    document.getElementById('container').appendChild(warning);
+}
+```
+
+
+
